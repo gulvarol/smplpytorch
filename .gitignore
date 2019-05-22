@@ -1,0 +1,10 @@
+*.sw*
+*.bak
+*_bak.py
+
+.cache/
+__pycache__/
+build/
+dist/
+
+smpl/native/models/*.pkl
