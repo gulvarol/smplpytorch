@@ -48,7 +48,7 @@ def display_model(
     return ax
 
 
-def draw_skeleton(joints3D, kintree_table, ax=None):
+def draw_skeleton(joints3D, kintree_table, ax=None, with_numbers=True):
     if ax is None:
         fig = plt.figure(frameon=False)
         ax = fig.add_subplot(111, projection='3d')
@@ -68,4 +68,6 @@ def draw_skeleton(joints3D, kintree_table, ax=None):
                 [joints3D[j1, 1], joints3D[j2, 1]],
                 [joints3D[j1, 2], joints3D[j2, 2]],
                 color=colors[i], linestyle='-', linewidth=2, marker='o', markersize=5)
+        if with_numbers:
+            ax.text(joints3D[j2, 0], joints3D[j2, 1], joints3D[j2, 2], j2)
     return ax
