@@ -10,6 +10,19 @@ The code is adapted from the [manopth](https://github.com/hassony2/manopth) repo
 <img src="image.png" alt="smpl" width="300"/>
 </p>
 
+## Installation
+
+You can install smpl-pytorch from [PyPI](https://pypi.org/project/smpl-pytorch/):
+
+    pip install smpl-pytorch
+
+* Download SMPL pickle files:
+  * Download the models from the [SMPL website](http://smpl.is.tue.mpg.de/) by choosing "SMPL for Python users". Note that you need to$
+  * Extract and copy the `models` folder into the `smpl/native/` folder.
+
+Alternatively, you can set up the package manually (see next).
+
+
 ## Setting up
 
 * Dependencies:
