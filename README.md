@@ -16,8 +16,8 @@ You can install smpl-pytorch from [PyPI](https://pypi.org/project/smpl-pytorch/)
 
     pip install smpl-pytorch
 
-* Download SMPL pickle files:
-  * Download the models from the [SMPL website](http://smpl.is.tue.mpg.de/) by choosing "SMPL for Python users". Note that you need to$
+Additionally, you have to download the SMPL pickle files:
+  * Download the models from the [SMPL website](http://smpl.is.tue.mpg.de/) by choosing "SMPL for Python users". Note that you need to comply with the [SMPL model license](http://smpl.is.tue.mpg.de/license_model).
   * Extract and copy the `models` folder into the `smpl/native/` folder.
 
 Alternatively, you can set up the package manually (see next).
