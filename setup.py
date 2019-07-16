@@ -7,13 +7,11 @@ with open("README.md", "r") as fh:
 REQUIREMENTS = [
     "opencv-python",
     "matplotlib",
-    "numpy",
-    "torch",
-    "chumpy @ git+ssh://git@github.com/hassony2/chumpy"]
+    "numpy"]
 
 setuptools.setup(
     name="smpl-pytorch",
-    version="0.0.1",
+    version="0.0.4",
     author="Gul Varol",
     author_email="gulvarols@gmail.com",
     python_requires=">=3.5.0",
