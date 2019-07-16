@@ -3,6 +3,7 @@
 *_bak.py
 
 .cache/
+.egg-info
 __pycache__/
 build/
 dist/
