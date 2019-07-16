@@ -3,7 +3,7 @@ def ready_arguments(fname_or_dict):
     import pickle
     import chumpy as ch
     from chumpy.ch import MatVecMult
-    from smpl.native.webuser.posemapper import posemap
+    from smplpytorch.native.webuser.posemapper import posemap
 
     if not isinstance(fname_or_dict, dict):
         dd = pickle.load(open(fname_or_dict, 'rb'), encoding='latin1')

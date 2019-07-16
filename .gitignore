@@ -3,8 +3,10 @@
 *_bak.py
 
 .cache/
+.egg-info
 __pycache__/
 build/
 dist/
 
-smpl/native/models/*.pkl
+image.png
+smplpytorch/native/models/*.pkl

@@ -1,6 +1,5 @@
 import setuptools
 
-
 with open("README.md", "r") as fh:
     long_description = fh.read()
 
@@ -12,7 +11,7 @@ REQUIREMENTS = [
     "chumpy @ git+ssh://git@github.com/hassony2/chumpy"]
 
 setuptools.setup(
-    name="smpl-pytorch",
+    name="smplpytorch",
     version="0.0.1",
     author="Gul Varol",
     author_email="gulvarols@gmail.com",
@@ -21,7 +20,7 @@ setuptools.setup(
     description="SMPL human body layer for PyTorch is a differentiable PyTorch layer",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/gulvarol/smpl-pytorch",
+    url="https://github.com/gulvarol/smplpytorch",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
