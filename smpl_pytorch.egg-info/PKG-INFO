@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: smpl-pytorch
-Version: 0.0.6
+Version: 0.0.7
 Summary: SMPL human body layer for PyTorch is a differentiable PyTorch layer
 Home-page: https://github.com/gulvarol/smpl-pytorch
 Author: Gul Varol

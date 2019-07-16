@@ -11,7 +11,7 @@ REQUIREMENTS = [
 
 setuptools.setup(
     name="smpl-pytorch",
-    version="0.0.6",
+    version="0.0.7",
     author="Gul Varol",
     author_email="gulvarols@gmail.com",
     python_requires=">=3.5.0",
