@@ -7,9 +7,10 @@ It can be integrated into any architecture as a differentiable layer to predict 
 The code is adapted from the [manopth](https://github.com/hassony2/manopth) repository by [Yana Hasson](https://github.com/hassony2).
 
 <p align="center">
-<img src="image.png" alt="smpl" width="300"/>
+<img src="assets/image.png" alt="smpl" width="300"/>
 </p>
 
+<<<<<<< HEAD
 ## Installation
 
 You can install smpl-pytorch from [PyPI](https://pypi.org/project/smpl-pytorch/):
@@ -24,14 +25,30 @@ Alternatively, you can set up the package manually (see next).
 
 
 ## Setting up
+=======
+>>>>>>> a18b0197d8a7204865b2ec95307e2286533f9487
 
-* Dependencies:
-  * Install the dependencies listed in [environment.yml](environment.yml)
-    * In an existing conda environment, `conda env update -f environment.yml`
-    * In a new environment, `conda env create -f environment.yml`, will create a conda environment named `smplpytorch`
-* Download SMPL pickle files:
+## Setup
+
+### 1. The `smplpytorch` package
+* **Run without installing:** You will need to install the dependencies listed in [environment.yml](environment.yml):
+  * `conda env update -f environment.yml` in an existing environment, or
+  * `conda env create -f environment.yml`, for a new `smplpytorch` environment
+* **Install:** To import `SMPL_Layer` in another project with `from smplpytorch.pytorch.smpl_layer import SMPL_Layer` do one of the following.
+  * Option 1: This should automatically install the dependencies.
+    ``` bash
+    git clone https://github.com/gulvarol/smplpytorch.git
+    cd smplpytorch
+    pip install .
+    ```
+  * Option 2: You can install `smplpytorch` from [PyPI](https://pypi.org/project/smplpytorch/). Additionally, you might need to install [chumpy](https://github.com/hassony2/chumpy.git).
+    ``` bash
+    pip install smplpytorch
+    ```
+
+### 2. Download SMPL pickle files
   * Download the models from the [SMPL website](http://smpl.is.tue.mpg.de/) by choosing "SMPL for Python users". Note that you need to comply with the [SMPL model license](http://smpl.is.tue.mpg.de/license_model).
-  * Extract and copy the `models` folder into the `smpl/native/` folder.
+  * Extract and copy the `models` folder into the `smplpytorch/native/` folder (or set the `model_root` parameter accordingly).
 
 ## Demo
 

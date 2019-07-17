@@ -8,4 +8,5 @@ __pycache__/
 build/
 dist/
 
-smpl/native/models/*.pkl
+image.png
+smplpytorch/native/models/*.pkl
