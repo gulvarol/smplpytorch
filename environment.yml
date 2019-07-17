@@ -6,5 +6,6 @@ dependencies:
   - matplotlib
   - numpy
   - pytorch
+  - pip
   - pip:
     - git+https://github.com/hassony2/chumpy.git

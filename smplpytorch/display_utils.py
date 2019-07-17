@@ -42,6 +42,7 @@ def display_model(
     ax.view_init(azim=-90, elev=100)
     fig.subplots_adjust(left=0, right=1, bottom=0, top=1)
     if savepath:
+        print('Saving figure at {}.'.format(savepath))
         plt.savefig(savepath, bbox_inches='tight', pad_inches=0)
     if show:
         plt.show()

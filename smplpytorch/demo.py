@@ -1,6 +1,6 @@
 import torch
 
-from smpl.pytorch.smpl_layer import SMPL_Layer
+from smplpytorch.pytorch.smpl_layer import SMPL_Layer
 from display_utils import display_model
 
 
@@ -12,7 +12,7 @@ if __name__ == '__main__':
     smpl_layer = SMPL_Layer(
         center_idx=0,
         gender='neutral',
-        model_root='smpl/native/models')
+        model_root='smplpytorch/native/models')
 
     # Generate random pose and shape parameters
     pose_params = torch.rand(batch_size, 72) * 0.2
