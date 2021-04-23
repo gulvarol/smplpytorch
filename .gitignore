@@ -4,6 +4,7 @@
 
 .cache/
 .egg-info
+smplpytorch.egg-info/
 __pycache__/
 build/
 dist/
