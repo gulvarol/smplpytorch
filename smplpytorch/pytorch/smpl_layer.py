@@ -149,6 +149,11 @@ class SMPL_Layer(Module):
                 th_jtr = th_jtr - center_joint
                 th_verts = th_verts - center_joint
         else:
+            if self.center_idx is not None:
+                ## Zero out root first
+                center_joint = th_jtr[:, self.center_idx].unsqueeze(1)
+                th_jtr = th_jtr - center_joint
+                th_verts = th_verts - center_joint
             th_jtr = th_jtr + th_trans.unsqueeze(1)
             th_verts = th_verts + th_trans.unsqueeze(1)
 
